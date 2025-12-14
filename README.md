@@ -167,7 +167,7 @@ linkedin-insights-microservice/
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/AtharvaAnbhule/LinkedIn-Insights-Microservice.git
    cd linkedin-insights-microservice
    ```
 
