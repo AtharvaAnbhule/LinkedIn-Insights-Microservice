@@ -1,14 +1,14 @@
-================================================================================
+
 LINKEDIN INSIGHTS MICROSERVICE
-================================================================================
+
 
 A backend microservice built using Python and FastAPI to collect, store, cache,
 and serve insights related to LinkedIn company pages. The system is designed with
 clean architecture principles, async-first execution, and scalability in mind.
 
-================================================================================
+
 TABLE OF CONTENTS
-================================================================================
+
 1. Introduction
 2. System Architecture
 3. Technology Stack
@@ -22,9 +22,9 @@ TABLE OF CONTENTS
 11. Engineering Decisions
 12. Production Readiness Checklist
 
-================================================================================
+
 1. INTRODUCTION
-================================================================================
+
 
 This service exposes REST APIs that allow clients to retrieve LinkedIn company
 information such as page details, posts, and followers. To ensure performance
@@ -37,9 +37,8 @@ The project focuses on:
 - Testability and maintainability
 - Real-world backend engineering practices
 
-================================================================================
 2. SYSTEM ARCHITECTURE
-================================================================================
+
 
 The application follows a layered design where each layer has a single, well-
 defined responsibility.
@@ -74,9 +73,9 @@ DESIGN PRINCIPLES:
 - Database access is abstracted
 - External integrations are isolated
 
-================================================================================
+
 3. TECHNOLOGY STACK
-================================================================================
+
 
 Framework        : FastAPI
 Language         : Python 3.11+
@@ -87,9 +86,9 @@ Scraping         : Playwright + HTML parsing
 Testing          : Pytest (async)
 Containerization : Docker & Docker Compose
 
-================================================================================
+
 4. FUNCTIONAL CAPABILITIES
-================================================================================
+
 
 CORE FEATURES:
 --------------
@@ -108,9 +107,9 @@ ADVANCED FEATURES:
 - Storage abstraction for media
 - Dockerized execution
 
-================================================================================
+
 5. PROJECT LAYOUT
-================================================================================
+
 
 linkedin-insights/
 ├── app/
@@ -148,9 +147,9 @@ linkedin-insights/
 ├── requirements.txt
 └── README.md
 
-================================================================================
+
 6. INSTALLATION & SETUP
-================================================================================
+
 
 OPTION A: DOCKER (RECOMMENDED)
 ------------------------------
@@ -178,9 +177,9 @@ OPTION B: LOCAL SETUP
 - Start MongoDB and Redis
 - Run FastAPI with Uvicorn
 
-================================================================================
+
 7. API REFERENCE
-================================================================================
+
 
 BASE PATH:
 ----------
@@ -205,9 +204,9 @@ GET /pages/{page_id}/followers
 - Returns follower list (if available)
 - Paginated response
 
-================================================================================
+
 8. CACHING STRATEGY
-================================================================================
+
 
 CACHING LEVELS:
 ---------------
@@ -227,9 +226,9 @@ page:{page_id}
 page:{page_id}:posts:{page}:{limit}
 search:{hash_of_filters}
 
-================================================================================
+
 9. DATA COLLECTION (SCRAPING)
-================================================================================
+
 
 The scraper component is isolated from the core application logic and is only
 used when data is not available in cache or database.
@@ -246,9 +245,9 @@ IMPORTANT:
 This implementation is for demonstration purposes only. Production systems
 should rely on authorized LinkedIn APIs and comply with platform policies.
 
-================================================================================
+
 10. TESTING STRATEGY
-================================================================================
+
 
 TEST TYPES:
 -----------
@@ -268,9 +267,9 @@ RUN TESTS:
 pytest
 pytest --cov=app
 
-================================================================================
+
 11. ENGINEERING DECISIONS
-================================================================================
+
 
 WHY FASTAPI:
 ------------
@@ -296,9 +295,9 @@ WHY ASYNC:
 - Scales under concurrent load
 - Modern Python best practice
 
-================================================================================
+
 12. PRODUCTION READINESS CHECKLIST
-================================================================================
+
 
 - Replace scraping with official APIs
 - Add authentication & authorization
@@ -307,8 +306,4 @@ WHY ASYNC:
 - Secure secrets via vault
 - Configure backups
 - Add CI/CD pipeline
-- Perform load testing
-
-================================================================================
-END OF DOCUMENT
-================================================================================
+- Perform load testing 
