@@ -1,5 +1,5 @@
 
-LINKEDIN INSIGHTS MICROSERVICE
+# LINKEDIN INSIGHTS MICROSERVICE
 
 
 A backend microservice built using Python and FastAPI to collect, store, cache,
@@ -7,7 +7,7 @@ and serve insights related to LinkedIn company pages. The system is designed wit
 clean architecture principles, async-first execution, and scalability in mind.
 
 
-TABLE OF CONTENTS
+# TABLE OF CONTENTS
 
 1. Introduction
 2. System Architecture
@@ -23,7 +23,7 @@ TABLE OF CONTENTS
 12. Production Readiness Checklist
 
 
-1. INTRODUCTION
+# 1. INTRODUCTION
 
 
 This service exposes REST APIs that allow clients to retrieve LinkedIn company
